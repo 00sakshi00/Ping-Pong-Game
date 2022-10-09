@@ -1,0 +1,62 @@
+body {
+    margin: 0px;
+    background-color: rgb(249, 213, 248);
+}
+body:scrollbar
+{
+    overflow:hidden;
+    display:none;
+}
+#rod-one {
+	position: absolute;
+	top: 0%;
+	background-image: linear-gradient(to right,purple,violet,purple);
+	border: 2px solid black;
+    width: 20vw;
+    box-sizing: border-box;
+    border-radius: 20px;
+    height: 5vh;
+    padding:5px;
+}
+#rod-two {
+	position: absolute;
+	bottom: 0%;
+	background-image: linear-gradient(to right,purple,violet,purple);
+    border-radius: 20px;;
+	border: 2px solid black;
+    width: 20vw;
+    box-sizing: border-box;
+    height: 5vh;
+    padding:5px;
+}
+#ball {
+	height: 70px;
+    width: 70px;
+    position:absolute;
+    border-radius: 50%;
+    background-image:radial-gradient(purple,violet);
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+
+.animate-top-right
+{
+    transition:transform linear 7s;
+    transform: translateX(2000px) translateY(-2000px);
+}
+.animate-bottom-right
+{
+    transition:transform linear 7s;
+    transform: translateX(2000px) translateY(2000px);
+}
+.animate-top-left
+{
+    transition:transform linear 7s;
+    transform: translateX(-2000px) translateY(-2000px);
+}
+.animate-bottom-left
+{
+    transition:transform linear 7s;
+    transform: translateX(-2000px) translateY(2000px);
+}
